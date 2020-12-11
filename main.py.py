@@ -105,7 +105,7 @@ class MainWindow(QMainWindow):
 		self.show() 
 
 		# setting window title 
-		self.setWindowTitle("Rover") 
+		self.setWindowTitle("myWeb") 
 
 	# method for adding new tab 
 	def add_new_tab(self, qurl = None, label ="Blank"): 
