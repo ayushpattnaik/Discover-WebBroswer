@@ -179,7 +179,7 @@ class MainWindow(QMainWindow):
 		title = self.tabs.currentWidget().page().title() 
 
 		# set the window title 
-		self.setWindowTitle("% s - Geek PyQt5" % title) 
+		self.setWindowTitle("% s - Rover PyQt5" % title) 
 
 	# action to go to home 
 	def navigate_home(self): 
@@ -220,7 +220,7 @@ class MainWindow(QMainWindow):
 app = QApplication(sys.argv) 
 
 # setting name to the application 
-app.setApplicationName("Geek PyQt5") 
+app.setApplicationName("Rover PyQt5") 
 
 # creating MainWindow object 
 window = MainWindow() 
