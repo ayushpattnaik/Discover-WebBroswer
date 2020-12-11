@@ -5,7 +5,7 @@ import time
 PATH="C:\Program Files (x86)\chromedriver.exe"
 driver= webdriver.Chrome(PATH)
 
-driver.get("https://techwithtim.net")
+driver.get("https://example.net")
 
 #driver.quit() for closing the entire browser
 #for getting the title of the page

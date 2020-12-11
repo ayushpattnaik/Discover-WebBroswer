@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-url="http://codewithharry.com"
+url="http://www.example.com"
 
 #Get the html
 r=requests.get(url)
