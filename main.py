@@ -233,9 +233,9 @@ class MainWindow(QMainWindow):
 
 		# set cursor position 
 		self.urlbar.setCursorPosition(0) 
-
-	def scrapMe(self):
-		url=""
+    
+	def scrapMe(self,q):
+		url=q.toString()
 		r=requests.get(url)
 		htmlContent=r.content
 		soup=BeautifulSoup(htmlContent,'html.parser')
@@ -245,7 +245,7 @@ class MainWindow(QMainWindow):
 			if(link.get('href')!='#'):
 				linkText=url+link.get('href')
 				all_links.add(link)
-				print(linkText)
+				print(linkText)'''
 
 
 # creating a PyQt5 application 
