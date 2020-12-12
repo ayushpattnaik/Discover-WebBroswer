@@ -114,13 +114,8 @@ class MainWindow(QMainWindow):
         scrap_btn.triggered.connect(self.scrapMe)
         navtb.addAction(scrap_btn)
 
-<<<<<<< HEAD
-		scrap_btn.triggered.connect(self.scrapMe)
-		navtb.addAction(scrap_btn)
-=======
         # creating first tab
         self.add_new_tab(QUrl('http://www.google.com'), 'Homepage')
->>>>>>> f68bc61fd54822233a6d7c24ce475e8f36517f21
 
         # showing all the components
         self.show()
@@ -237,25 +232,10 @@ class MainWindow(QMainWindow):
         # set cursor position
         self.urlbar.setCursorPosition(0)
 
-<<<<<<< HEAD
-		# set cursor position 
-		self.urlbar.setCursorPosition(0) 
-    
-	def scrapMe(self,q):
-		url=q.toString()
-		r=requests.get(url)
-		htmlContent=r.content
-		soup=BeautifulSoup(htmlContent,'html.parser')
-		anchors=soup.find_all('a')
-		all_links=set()
-		for link in anchors:
-			if(link.get('href')!='#'):
-				linkText=url+link.get('href')
-				all_links.add(link)
-				print(linkText)
-=======
     def scrapMe(self, q):
-        url = q.toString()
+        url = self.urlbar.text()
+        # url = str(q)
+        # url = str(q)
         r = requests.get(url)
         htmlContent = r.content
         soup = BeautifulSoup(htmlContent, 'html.parser')
@@ -266,7 +246,6 @@ class MainWindow(QMainWindow):
                 linkText = url+link.get('href')
                 all_links.add(link)
                 print(linkText)
->>>>>>> f68bc61fd54822233a6d7c24ce475e8f36517f21
 
 
 # creating a PyQt5 application
