@@ -113,7 +113,7 @@ class MainWindow(QMainWindow):
 		scrap_btn=QAction("Scrap me",self)
 		scrap_btn.setStatusTip("scrapping")
 
-		#scrap_btn.triggered.connect(self.)
+		scrap_btn.triggered.connect(self.scrapMe)
 		navtb.addAction(scrap_btn)
 
 		# creating first tab 
@@ -241,7 +241,7 @@ class MainWindow(QMainWindow):
 		soup=BeautifulSoup(htmlContent,'html.parser')
 		anchors=soup.find_all('a')
 		all_links=set()
-		for links in anchors:
+		for link in anchors:
 			if(link.get('href')!='#'):
 				linkText=url+link.get('href')
 				all_links.add(link)
