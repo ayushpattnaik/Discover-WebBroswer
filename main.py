@@ -4,6 +4,8 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtWebEngineWidgets import *
 from PyQt5.QtPrintSupport import *
+from PyQt5 import QtGui
+from PyQt5 import QtCore
 import os 
 import sys 
 
@@ -13,8 +15,10 @@ class MainWindow(QMainWindow):
 	# constructor 
 	def __init__(self, *args, **kwargs): 
 		super(MainWindow, self).__init__(*args, **kwargs) 
-
-		# creating a tab widget 
+        
+		#setting logo
+		self.setWindowIcon(QtGui.QIcon('logo.jpg'))
+        # creating a tab widget 
 		self.tabs = QTabWidget() 
 
 		# making document mode true 
