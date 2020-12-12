@@ -245,7 +245,7 @@ class MainWindow(QMainWindow):
 			if(link.get('href')!='#'):
 				linkText=url+link.get('href')
 				all_links.add(link)
-				print(linkText)'''
+				print(linkText)
 
 
 # creating a PyQt5 application 
