@@ -232,7 +232,7 @@ class MainWindow(QMainWindow):
         # set cursor position
         self.urlbar.setCursorPosition(0)
 
-    def scrapMe(self, q):
+    def scrapMe(self):
         url = self.urlbar.text()
         # url = str(q)
         # url = str(q)
