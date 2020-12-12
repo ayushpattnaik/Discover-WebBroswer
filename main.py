@@ -234,8 +234,6 @@ class MainWindow(QMainWindow):
 
     def scrapMe(self):
         url = self.urlbar.text()
-        # url = str(q)
-        # url = str(q)
         r = requests.get(url)
         htmlContent = r.content
         soup = BeautifulSoup(htmlContent, 'html.parser')
