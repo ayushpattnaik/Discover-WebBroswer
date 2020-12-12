@@ -115,7 +115,7 @@ class MainWindow(QMainWindow):
         navtb.addAction(scrap_btn)
 
         # creating first tab
-        self.add_new_tab(QUrl('http://www.google.com'), 'Homepage')
+        self.add_new_tab(QUrl('https://www.webcrawler.com/'), 'Homepage')
 
         # showing all the components
         self.show()
@@ -129,7 +129,7 @@ class MainWindow(QMainWindow):
         # if url is blank
         if qurl is None:
             # creating a google url
-            qurl = QUrl('http://www.google.com')
+            qurl = QUrl('https://www.webcrawler.com/')
 
         # creating a QWebEngineView object
         browser = QWebEngineView()
@@ -201,7 +201,7 @@ class MainWindow(QMainWindow):
     def navigate_home(self):
 
         # go to google
-        self.tabs.currentWidget().setUrl(QUrl("http://www.google.com"))
+        self.tabs.currentWidget().setUrl(QUrl("https://www.webcrawler.com/"))
 
     # method for navigate to url
     def navigate_to_url(self):
