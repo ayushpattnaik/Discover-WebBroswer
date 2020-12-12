@@ -8,6 +8,8 @@ from PyQt5 import QtGui
 from PyQt5 import QtCore
 import os 
 import sys 
+import requests
+from bs4 import BeautifulSoup
 
 # main window 
 class MainWindow(QMainWindow): 
@@ -51,6 +53,14 @@ class MainWindow(QMainWindow):
 		# adding tool bar tot he main window 
 		self.addToolBar(navtb) 
 
+	    # creating home action 
+		home_btn = QAction("Home", self) 
+		home_btn.setStatusTip("Go home") 
+
+		# adding action to home button 
+		home_btn.triggered.connect(self.navigate_home) 
+		navtb.addAction(home_btn) 
+
 		# creating back action 
 		back_btn = QAction("Back", self) 
 
@@ -76,13 +86,10 @@ class MainWindow(QMainWindow):
 		reload_btn.triggered.connect(lambda: self.tabs.currentWidget().reload()) 
 		navtb.addAction(reload_btn) 
 
-		# creating home action 
-		home_btn = QAction("Home", self) 
-		home_btn.setStatusTip("Go home") 
 
-		# adding action to home button 
-		home_btn.triggered.connect(self.navigate_home) 
-		navtb.addAction(home_btn) 
+         
+
+
 
 		# adding a separator 
 		navtb.addSeparator() 
@@ -101,6 +108,13 @@ class MainWindow(QMainWindow):
 		stop_btn.setStatusTip("Stop loading current page") 
 		stop_btn.triggered.connect(lambda: self.tabs.currentWidget().stop()) 
 		navtb.addAction(stop_btn) 
+
+	    #creating a scrapper button
+		scrap_btn=QAction("Scrap me",self)
+		scrap_btn.setStatusTip("scrapping")
+
+		#scrap_btn.triggered.connect(self.)
+		navtb.addAction(scrap_btn)
 
 		# creating first tab 
 		self.add_new_tab(QUrl('http://www.google.com'), 'Homepage') 
@@ -183,7 +197,7 @@ class MainWindow(QMainWindow):
 		title = self.tabs.currentWidget().page().title() 
 
 		# set the window title 
-		self.setWindowTitle("% s - Discover PyQt5" % title) 
+		self.setWindowTitle("% s - Discover" % title) 
 
 	# action to go to home 
 	def navigate_home(self): 
@@ -220,11 +234,25 @@ class MainWindow(QMainWindow):
 		# set cursor position 
 		self.urlbar.setCursorPosition(0) 
 
+	def scrapMe(self):
+		url=""
+		r=requests.get(url)
+		htmlContent=r.content
+		soup=BeautifulSoup(htmlContent,'html.parser')
+		anchors=soup.fin_all('a')
+		all_links=set()
+		for links in anchors:
+			if(link.get('href')!='#'):
+				linkText=url+link.get('href')
+				all_links.add(link)
+				print(linkText)
+
+
 # creating a PyQt5 application 
 app = QApplication(sys.argv) 
 
 # setting name to the application 
-app.setApplicationName("Discover PyQt5") 
+app.setApplicationName("Discover") 
 
 # creating MainWindow object 
 window = MainWindow() 
