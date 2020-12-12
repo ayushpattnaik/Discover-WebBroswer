@@ -239,7 +239,7 @@ class MainWindow(QMainWindow):
 		r=requests.get(url)
 		htmlContent=r.content
 		soup=BeautifulSoup(htmlContent,'html.parser')
-		anchors=soup.fin_all('a')
+		anchors=soup.find_all('a')
 		all_links=set()
 		for links in anchors:
 			if(link.get('href')!='#'):
