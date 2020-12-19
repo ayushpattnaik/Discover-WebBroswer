@@ -23,8 +23,8 @@
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgments)
 
-## 🧐 Need for the app <a name = "problem_statement"></a>
-
+## 🧐 Problem Statement <a name = "problem_statement"></a>
+Create a web browser GUI with added scraping functionality.
 
 
 ## ⛓️Limitations <a name = "limitations"></a>
@@ -32,14 +32,15 @@
 
 
 ## 🚀 Future Scope <a name = "future_scope"></a>
-
+ - We further intend to include more functionality like allowing users to scrape particular content(images, text, links) and save it on their local machine.
+ - Use selenium to automate web browsing.
+ - Implement our own search engine.
 
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
-
-- "git clone https://github.com/ayushpattnaik/WebBroswer.git"
-- "code Python/" 
-- This would open the code in VS-Code IDE where you can run "main.py" file to open the web browser. 
+Run the following commands on you command prompt (Windows):
+- git clone https://github.com/ayushpattnaik/WebBroswer.git
+- python main.py
 
 ## 🎈 Usage <a name="usage"></a>
 
