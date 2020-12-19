@@ -157,7 +157,7 @@ class MainWindow(QMainWindow):
 
         all_links = set()
         for link in anchors:
-            linkText = url+link.get('href')
+            linkText = str(url)+str(link.get('href'))
             all_links.add(linkText)
 
         f = open("links.txt", "w")
