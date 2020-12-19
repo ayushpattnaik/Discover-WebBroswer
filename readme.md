@@ -54,8 +54,7 @@ Run the following commands on you command prompt (Windows):
 
 ## 🔗 Links <a name = "links"></a>
 
-- [Google Drive](https://drive.google.com/drive/folders/1Lqcg8Rbyl3UKUTf0ejsHWkXMpYA5EP3Y?usp=sharing)
-- [Github Repo Link](https://github.com/aayush-razdan/Quarantine-Lovers)
+- [Github Repo Link] (https://github.com/ayushpattnaik/WebBroswer)
 
 ## 🤳 Screenshots <a name = "screenshots"></a>
 
