@@ -76,8 +76,3 @@
 - [Ayush Pattnaik](https://github.com/ayushpattnaik)
 
 ## 🎉 Acknowledgments <a name = "acknowledgments"></a>
-
--     Manasi Unmesh Kulkarni
--     Aditi Nikalje
--     Alkesha Baikar
--     Chiranjiv Karning
