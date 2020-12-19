@@ -54,7 +54,7 @@ Run the following commands on you command prompt (Windows):
 
 ## 🔗 Links <a name = "links"></a>
 
-- [Github Repo Link] (https://github.com/ayushpattnaik/WebBroswer)
+- [Github Repo Link](https://github.com/ayushpattnaik/WebBroswer)
 
 ## 🤳 Screenshots <a name = "screenshots"></a>
 
