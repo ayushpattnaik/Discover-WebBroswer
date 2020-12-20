@@ -160,7 +160,7 @@ class MainWindow(QMainWindow):
             linkText = str(url)+str(link.get('href'))
             all_links.add(linkText)
 
-        f = open("./Output/links.txt", "w")
+        f = open("./Scrapped Outputs/links.txt", "w")
         for link in all_links:
                 f.write(link)
                 f.write("\n")
@@ -179,7 +179,7 @@ class MainWindow(QMainWindow):
             all_images.add(img)
             # print(img)
             
-        f = open("./Output/images.txt", "w")
+        f = open("./Scrapped Output/images.txt", "w")
         for image in all_images:
                 f.write(image)
                 f.write("\n")
