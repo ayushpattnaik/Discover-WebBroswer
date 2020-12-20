@@ -21,24 +21,29 @@
 - [Links](#links)
 - [Screenshots](#screenshots)
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgments)
 
 ## 🧐 Problem Statement <a name = "problem_statement"></a>
-Create a web browser GUI with added scraping functionality.
+Create a web browser GUI with added scraping functionality in python. 
 
 
 ## ⛓️Limitations <a name = "limitations"></a>
 
 
 
+
 ## 🚀 Future Scope <a name = "future_scope"></a>
- - We further intend to include more functionality like allowing users to scrape particular content(images, text, links) and save it on their local machine.
  - Use selenium to automate web browsing.
  - Implement our own search engine.
+ - Implement our own webcrawler.
 
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 Run the following commands on you command prompt (Windows):
+- pip install PyQt5
+- pip install PyQtWebEngine
+- pip install BeautifulSoup
+- pip install html5lib
+- pip install requests
 - git clone https://github.com/ayushpattnaik/WebBroswer.git
 - python main.py
 
@@ -66,4 +71,3 @@ Run the following commands on you command prompt (Windows):
 - [Saksham Tikoo](https://github.com/tikoosaksham)
 - [Ayush Pattnaik](https://github.com/ayushpattnaik)
 
-## 🎉 Acknowledgments <a name = "acknowledgments"></a>
