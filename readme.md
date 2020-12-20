@@ -23,10 +23,11 @@
 - [Authors](#authors)
 
 ## 🧐 Problem Statement <a name = "problem_statement"></a>
-Create a web browser GUI with added scraping functionality.
+Create a web browser GUI with added scraping functionality in python. 
 
 
 ## ⛓️Limitations <a name = "limitations"></a>
+
 
 
 
@@ -55,7 +56,6 @@ Run the following commands on you command prompt (Windows):
 - [Beautiful Soup](https://pypi.org/project/beautifulsoup4/) 
 - [PyQt5](https://pypi.org/project/PyQt5/) 
 - [urllib](https://docs.python.org/3/library/urllib.html) 
-- [Requests Module](https://pypi.org/project/requests/)
 
 ## 🔗 Links <a name = "links"></a>
 
